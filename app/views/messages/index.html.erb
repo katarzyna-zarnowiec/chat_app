@@ -1,2 +1,6 @@
-<h1>Messages#index</h1>
-<p>Find me in app/views/messages/index.html.erb</p>
+<p>Signed in as @<%= cookies.signed[:username] %>.</p>
+
+<div id='messages'></div>
+<br/><br/>
+
+<%= text_field_tag :body, '', id: 'chat-speak' %>
